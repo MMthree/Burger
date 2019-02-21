@@ -1,0 +1,82 @@
+body {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+
+}
+
+header {
+    font-family: 'Lobster', cursive;
+    color: #C6001D;
+}
+
+img {
+    margin: 0 0 0 0;
+    width: 150px;
+}
+
+.col.s12>.btn {
+    width: 100%;
+}
+
+.devour span {
+    color: #C6001D;
+}
+
+.btn{
+    width: 100%;
+}
+
+.devour .btn {
+    margin-top: 10px;
+}
+
+
+  /* Input Field colors*/
+  .row .input-field input:focus {
+    border-bottom: 1px solid #C6001D !important;
+    box-shadow: 0 1px 0 0 #C6001D !important
+  }
+
+  .row .input-field input[type=text]:focus  {
+    color: #C6001D !important;
+    font-weight: 500;
+  }
+   /* invalid color */
+   .input-field ::placeholder{
+    color: rgba(0, 0, 0, 0.466) !important;
+   }
+
+   /* button colors */
+   .btn{
+    background-color: #C6001D;
+  }
+  .btn:visited{
+    background-color: #C6001D
+  }
+  .btn:hover {
+    background-color: rgb(228, 0, 34);
+  }
+  .btn:active{
+    background-color: pink;
+  }
+  .btn:focus{
+    background-color: pink;
+  }
+
+  .section {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;;
+  }
+
+  .check {
+    height: 75px;
+    background-image: url("/burger_tri.png");
+    background-size: 75px;
+    background-repeat: repeat-x;
+    width: 100%;
+
+  }

@@ -1,0 +1,64 @@
+
+<div class="container">
+
+    {{!-- Burger Logo --}}
+    <header>
+        <div class="row">
+            <div class="col s12 center">
+                <h1>Mario's Burger Shack</h1>
+                <img src="/burger.png">
+            </div>
+        </div>
+    </header>
+
+    {{!-- Input field for new burgers --}}
+    <div class="row">
+            <div class="row center">
+                <div class="col m3"></div>
+                <form class="create">
+                <div class="input-field col s12 m6">
+                     <input placeholder="Enter a New Burger"  type="text" class="center new-burger">
+                    <button class="btn waves-effect waves-light new-submit" type="submit" name="action">Submit</button>
+                </div>
+                </form>
+                <div class="col m3"></div>
+            </div>
+        </form>
+    </div>
+
+
+    {{!-- New burgers added --}}
+    <div class="row">
+        <div class="col s12 m6">
+            <div class="card">
+                <div class="card-content devour">
+                    <span class="center card-title">Devour</span>
+                    {{#each burgers}}
+                        {{#unless devoured}}
+                            <button class="btn waves-effect waves-light eat" type="submit" name="action" data-id="{{this.ID}}" data-newDevoured="{{devour}}">{{burger_name}}</button>
+                        {{/unless}}
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+
+
+    {{!-- Wash devoured burger's dishes --}}
+        <div class="col s12 m6">
+            <div class="card">
+                <div class="card-content devour">
+                    <span class="center card-title">Return Tray</span>
+                    {{#each burgers}}
+                        {{#if devoured}}
+                            <button class="btn waves-effect waves-light wash" type="submit" name="action" data-id="{{this.ID}}" data-newDevoured="{{devour}}">{{burger_name}}</button>
+                        {{/if}}
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="section">
+    <div class="check"></div>
+</footer>
