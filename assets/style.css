@@ -1,9 +1,7 @@
+
+
 body {
     font-family: "Roboto", sans-serif;
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-
 }
 
 header {
@@ -65,14 +63,16 @@ img {
     background-color: pink;
   }
 
-  .section {
+  /* .section {
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;;
-  }
+  } */
 
+ 
   .check {
+    margin-top: 200px;
     height: 75px;
     background-image: url("/burger_tri.png");
     background-size: 75px;
