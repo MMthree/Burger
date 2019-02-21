@@ -1,6 +1,6 @@
 # Mario's Burger Shack
 
-* [Demo](www.google.com)
+### [Demo](www.google.com)
 
 ### Description 
 
@@ -15,7 +15,7 @@ Click the burger to Devour! Once you finish your burger, please return your tray
 * Node.js
 * MySql
 
-** Node Packages**
+**Node Packages**
 
 * mysql
 * express
