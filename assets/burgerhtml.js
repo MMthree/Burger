@@ -1,7 +1,10 @@
 // Create a new burger
 $(".create").on("submit", function (e) {
-    // e.preventDefault();
-
+    if ($(".new-burger").val().trim() === "") {
+      e.preventDefault();
+      $(".burger-validate").text("Please enter the name of a burger above");
+    }
+    else {
     var newBurger = {
       burger_name: $(".new-burger").val().trim(),
       devoured: 0
@@ -13,7 +16,9 @@ $(".create").on("submit", function (e) {
     }).then(function() {
         // location.reload();
     });
+    }
   });
+
 
 
   // Eat the burger
